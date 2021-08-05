@@ -25,6 +25,17 @@ vector<int> quadraticroots(int a, int b, int c)
 
 int main()
 {
-   int a=1, b=-2, c=3;
+    int a = 2, b = -4, c = 1;
+    vector<int> roots = quadraticroots(a, b, c);
+
+    if (roots.size()==1 && roots[0]== -1)
+    {
+        cout << "Imaginary roots";
+    }
+    else
+    {
+        for (int i = 0; i < roots.size(); i++)
+            cout << roots[i] << " ";
+    }
     return 0;
 }
